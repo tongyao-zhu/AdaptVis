@@ -484,7 +484,6 @@ class VG_QA(Dataset):
             image_dir = os.path.join(root_dir, 'vg_images')
         else:
             annotation_file = os.path.join(root_dir, "vg_qa_two_obj.json")
-            # annotation_file=os.path.join(root_dir,"/home/user/shiqi/mmlm_mech/whatsup_vlms/data/vg_qa_two_obj_filtered.json")
             image_dir = os.path.join(root_dir, 'vg_images')
         if not os.path.exists(image_dir):
             print("Image directory for VG-QA could not be found!")
