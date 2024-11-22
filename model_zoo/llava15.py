@@ -474,7 +474,7 @@ class LlavaWrapper:
         TP, TN, FP, FN = 0, 0, 0, 0
 
         # Set the directory to save attention maps
-        save_attn_dir = f"/home/user/shiqi/mmlm_mech/whatsup_vlms/outputs/{dataset}_weight{weight:.2f}"
+        save_attn_dir = f"outputs/{dataset}_weight{weight:.2f}"
         if not os.path.exists(save_attn_dir):
             print("Creating directory for saving attention maps:", save_attn_dir)
             os.makedirs(save_attn_dir)
